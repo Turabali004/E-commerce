@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const RAPIDAPI_HOST = "real-time-amazon-data.p.rapidapi.com";
-const RAPIDAPI_KEY = "0a2c3b80b9msh1b5023b5417b461p1e5489jsn70768e278697";
+const RAPIDAPI_KEY = "ebdaf71f5dmsh22aa38d29463840p119d5ajsn4e444afebbb6";
 
 const apiClient = axios.create({
   baseURL: `https://${RAPIDAPI_HOST}`,
