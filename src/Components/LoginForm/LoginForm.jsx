@@ -2,7 +2,7 @@ import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { useDispatch } from 'react-redux';
-import { loginUser, setError } from '../Features/user/userSlice';
+import { loginUser, setError } from '../../Features/user/userSlice';
 import { useNavigate } from 'react-router-dom';
 
 const validationSchema = Yup.object().shape({

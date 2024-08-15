@@ -11,7 +11,6 @@ export default function LandingPage() {
     <div className="min-h-screen bg-gradient-to-b from-gray-800 to-gray-900 flex flex-col items-center justify-center text-white">
 
       <div className="mb-12 text-center">
-        <div className="text-5xl font-bold text-yellow-500">🛍️</div>
         <h1 className="text-4xl font-semibold mt-4 text-yellow-300">
           Welcome to MyShope
         </h1>

@@ -2,7 +2,7 @@ import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { useDispatch } from "react-redux";
-import { registerUser } from "../Features/user/userSlice";
+import { registerUser } from "../../Features/user/userSlice";
 import { useNavigate } from "react-router-dom";
 
 const validationSchema = Yup.object().shape({
@@ -22,7 +22,7 @@ const RegistrationForm = () => {
   const handleSubmit = (values) => {
     dispatch(registerUser(values));
     localStorage.setItem("user", JSON.stringify(values));
-    navigate("/admin-panel");
+    navigate("/product-listing");
   };
 
   return (

@@ -58,7 +58,7 @@ const ProductListing = () => {
       <div className="mb-8 flex justify-center items-center">
         <button
           onClick={toggleSearchBar}
-          className="bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:ring-opacity-50 transition duration-300 ease-in-out"
+          className="bg-blue-950 text-white px-4 py-2 rounded-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50 transition duration-300 ease-in-out"
         >
           {isSearchVisible ? "Hide Search" : "Show Search"}
         </button>
@@ -87,7 +87,7 @@ const ProductListing = () => {
           products.map((product) => (
             <div
               key={product.asin}
-              className="bg-white shadow-lg rounded-lg overflow-hidden p-4 transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
+              className="bg-white shadow-lg rounded-lg overflow-hidden p-4 transform transition-all duration-300 ease-in-out  hover:shadow-xl"
             >
               <img
                 src={product.product_photo}
@@ -107,7 +107,7 @@ const ProductListing = () => {
               )}
               <button
                 onClick={() => navigate(`/product/${product.asin}`)}
-                className="mt-4 bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:ring-opacity-50 transition duration-300 ease-in-out"
+                className="mt-4 bg-blue-950 text-white px-4 py-2 rounded-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:ring-opacity-50 transition duration-300 ease-in-out"
               >
                 View Details
               </button>
