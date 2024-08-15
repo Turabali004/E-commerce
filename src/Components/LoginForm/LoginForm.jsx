@@ -30,9 +30,9 @@ const LoginForm = () => {
     };
 
     return (
-        <div className="flex items-center justify-center min-h-screen bg-gray-100">
-            <div className="w-full max-w-md p-8 bg-white shadow-md rounded-lg">
-                <h2 className="text-2xl font-bold mb-4">Login</h2>
+        <div className="flex items-center justify-center min-h-screen bg-blue-950 text-center">
+            <div className="w-full max-w-md p-8 bg-gray-400 shadow-md rounded-lg">
+                <h2 className="text-2xl font-bold mb-4 ">Login</h2>
                 <Formik
                     initialValues={{ email: '', password: '' }}
                     validationSchema={validationSchema}
@@ -41,33 +41,33 @@ const LoginForm = () => {
                     {() => (
                         <Form>
                             <div className="mb-4">
-                                <label className="block text-gray-700">Email</label>
+                                <label className="block text-gray-700 text-left">Email</label>
                                 <Field
                                     name="email"
                                     type="email"
-                                    className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm"
+                                    className="mt-1 block w-full px-3 py-2 border  border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-950 focus:border-blue-950 sm:text-sm"
                                 />
-                                <ErrorMessage name="email" component="div" className="text-red-500 text-sm mt-1" />
+                                <ErrorMessage name="email" component="div" className="text-white text-sm mt-1" />
                             </div>
                             <div className="mb-6">
-                                <label className="block text-gray-700">Password</label>
+                                <label className="block text-gray-700 text-left">Password</label>
                                 <Field
                                     name="password"
                                     type="password"
-                                    className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm"
+                                    className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-950 focus:border-blue-950 sm:text-sm"
                                 />
-                                <ErrorMessage name="password" component="div" className="text-red-500 text-sm mt-1" />
+                                <ErrorMessage name="password" component="div" className="text-white text-sm mt-1" />
                             </div>
                             <button
                                 type="submit"
-                                className="w-full py-2 px-4 bg-orange-600 text-white font-bold rounded-md shadow-sm hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 transition-transform transform hover:scale-105"
+                                className="w-full py-2 px-4 bg-blue-950 text-white font-bold rounded-md shadow-sm hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 transition-transform transform hover:scale-105"
                             >
                                 Login
                             </button>
                         </Form>
                     )}
                 </Formik>
-                    <button onClick={handleClick}><span className='flex items-center justify-center mt-8 w-full'>Not registerd ? Click Here</span></button>
+                    <button onClick={handleClick}><span className='flex items-center justify-center mt-8 w-full bg-blue-950 text-white px-10 py-3'>Register Your self ? Click Here</span></button>
             </div>
         </div>
     );
