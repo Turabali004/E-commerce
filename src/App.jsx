@@ -16,6 +16,7 @@ import {
   CheckoutForm,
   OrderHistory,
   PrivateRoute,
+  UserData
 } from './index.js';
 
 function App() {
@@ -25,6 +26,11 @@ function App() {
           <Route index element={<LandingPage />} />
           <Route path="login" element={<LoginForm />} />
           <Route path="register" element={<RegistrationForm />} />
+          <Route path='userData' element={<UserData/>}/>
+          <Route
+            path="userData"
+            element={<PrivateRoute element={<UserData />} />}
+          />
           <Route
             path="product-listing"
             element={<PrivateRoute element={<ProductListing />} />}

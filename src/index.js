@@ -13,6 +13,7 @@ import PrivateRoute from "./Components/PrivateRoutes/PrivateRoutes";
 import AdminPanel from "./Components/AdminPanel/AdminPanel";
 import CheckoutForm from "./Components/CheckoutForm/CheckoutForm";
 import OrderHistory from "./Components/OrderHistory/OrderHistory";
+import UserData from "./Components/UserData";
 
 export {
   PrivateRoute,
@@ -29,4 +30,5 @@ export {
   store,
   CheckoutForm,
   OrderHistory,
+  UserData
 };

@@ -11,16 +11,16 @@ export default function LandingPage() {
     <div className="min-h-screen bg-gradient-to-b from-gray-800 to-gray-900 flex flex-col items-center justify-center text-white">
 
       <div className="mb-12 text-center">
-        <h1 className="text-4xl font-semibold mt-4 text-yellow-300">
+        <h1 className="text-4xl font-semibold mt-4 text-white">
           Welcome to MyShope
         </h1>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-12">
+      <div className="flex flex-col gap-8">
         <div className="flex flex-col items-center max-w-xs">
           <button
             onClick={() => navigate("/login")}
-            className="bg-teal-500 text-gray-900 font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-teal-600 transition duration-300"
+            className="bg-teal-500 text-gray-900 font-semibold py-3 px-8 shadow-lg hover:bg-teal-600 transition duration-300"
           >
             Login
           </button>
@@ -30,7 +30,7 @@ export default function LandingPage() {
         <div className="flex flex-col items-center max-w-xs">
           <button
             onClick={() => navigate("/register")}
-            className="bg-purple-500 text-gray-900 font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-purple-600 transition duration-300"
+            className="bg-purple-500 text-gray-900 font-semibold py-3 px-8  shadow-lg hover:bg-purple-600 transition duration-300"
           >
             Register
           </button>

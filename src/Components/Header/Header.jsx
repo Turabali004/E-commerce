@@ -1,6 +1,3 @@
-
-
-
 import React from "react";
 import { NavLink } from "react-router-dom";
 
@@ -18,12 +15,12 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-gradient-to-r from-purple-600 to-blue-600 text-white shadow-lg">
+    <header className="min-h-28 bg-gradient-to-r from-blue-600 to-white-600 text-white shadow-lg">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
+        <div className="flex justify-around flex-col h-16 items-center gap-4">
           <div className="flex-shrink-0 flex items-center">
             <NavLink className="text-white text-2xl font-extrabold underline">
-             My-Store
+              My-Store
             </NavLink>
           </div>
           <div className="hidden md:block">
@@ -54,6 +51,14 @@ export default function Header() {
                 title="Admin dashboard for managing products"
               >
                 Admin
+              </NavLink>
+              <NavLink
+                to="/userData"
+                className={({ isActive }) =>
+                  `${linkClasses} ${isActive ? activeClass : inactiveClass}`
+                }
+              >
+                Users
               </NavLink>
             </div>
           </div>
@@ -129,6 +134,15 @@ export default function Header() {
               title="Admin dashboard for managing products"
             >
               Admin
+            </NavLink>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                `${linkClasses} block ${isActive ? activeClass : inactiveClass}`
+              }
+              title="Admin dashboard for managing products"
+            >
+              Users
             </NavLink>
           </div>
         </div>
